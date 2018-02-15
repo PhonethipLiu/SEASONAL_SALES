@@ -1,0 +1,16 @@
+$bkg-primary: rgb(155, 42, 22);
+$text-color: rgb(107, 106, 106);
+$link-color: rgb(144, 156, 212);
+$body-font: Geneva, sans-serif;
+$head-font: Cambria, serif;
+
+body {
+    margin: 1em 4em;
+    font-family: $body-font;
+    line-height: 1.5em;
+    border: 0;
+}
+
+hgroup {
+    font-family: $head-font;
+}
