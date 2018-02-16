@@ -5,26 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Seasonal-sales</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
    
 </head>
 <body>
 
 <section class="container c1">
     <article class="C-products" id="products_list">
-        <h1></h1>
+        <h1>View our seasonal products</h1>
+        <div > 
+            <h3>Season sale items
+            <select id="seasonal_discount_select">
+                <option value="spring">Spring</option>
+                <option value="autumn">Autumn</option>
+                <option value="winter">Winter</option>
+              </select>
+            </h3>
+        </div>
+
+        <div id="seasonal_products">
+
+        </div>
     </article>
 
 </section>
 
 <section class="container c2">
     <article class="instructions">
-        <h3>Instructions for seasonal-sales exercise</h3>
-        <p>  Your job is to build a department store's web page that lists products, the name of the department each one is in, and the price.The two JSON representations above should be in two files: `products.json`, and `categories.json`. Use Javascript's `XMLHttpRequest()` method to read the data from those files, and then build HTML representations of the data.</p>
+        
+        <h4>Instructions for seasonal-sales exercise</h3>
+        
+        <p>  Your job is to build a department store's web page that lists products, the name of the department each one is in, and the price.The two JSON representations above should be in two files: 'products.json', and 'categories.json'. Use Javascript's 'XMLHttpRequest()' method to read the data from those files, and then build HTML representations of the data.</p>
+        
+        <h4>Discounts</h3>
+        
+        <p>Now that you've populate the view with all of the products, put a '&lt;select&gt;' element at the top of the page that contains all possible values of the 'season_discount' key in the categories file. As soon as you select one of the seasons, all prices on the page should immediately be discounted by the corresponding percentage.</p>
+
+        <p> For example, when _Spring_ is chosen, all products in the corresponding Household category should have their prices updated with a 15% discount off the base price.</p>
+                
     </article>
 </section>
 
 
-    <script src="seasonal-sales.js"></script>
+    <script src="js/seasonal-sales.js"></script>
 </body>
 </html>

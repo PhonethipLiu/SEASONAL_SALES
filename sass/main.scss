@@ -1,16 +1,55 @@
 $bkg-primary: rgb(155, 42, 22);
 $text-color: rgb(107, 106, 106);
 $link-color: rgb(144, 156, 212);
-$body-font: Geneva, sans-serif;
-$head-font: Cambria, serif;
+$body-font: Calibri, sans-serif;
+$head-font: Georgia, serif;
 
 body {
     margin: 1em 4em;
     font-family: $body-font;
-    line-height: 1.5em;
+    line-height: 1.4rem;
+    font-size: .8rem;
     border: 0;
+    color: $text-color;
+}
+ // headings style
+h1, h2, h3, h4 {
+    font-family: $head-font;
+    color: $bkg-primary;
 }
 
-hgroup {
-    font-family: $head-font;
+h1 {
+    padding-bottom: 1.5rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 900; 
+    font-size: 1rem;
+}
+h4 {
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+h5 {
+    font-family: $body-font;
+
+}
+
+select {
+    margin-left: 2rem;
+    font-size: .8rem;
+}
+
+// product-wrapper list styles
+.product-wrapper {
+    text-transform: lowercase;
+    color: black;
+    font-family: $body-font;
+}
+
+//id styles
+#seasonal_products {
+    padding: 2rem 0rem;
 }
